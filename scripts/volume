@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Volume control script and notify the volume
+#I'm using dunst for the notification and pamixer for the audio control
+
+if [[ "$1" -eq 1 ]];then
+	pamixer -i 2
+else 
+	pamixer -d 2
+fi
+
+	
+#get the current volume
+
+current_volume=$(pamixer --get-volume)
+
+#use dunstify to notify the volume level
+# -r replaces the notification with ID so the screen isn't flooded when constantly increasing volume
+# -t sets the time to given in ms
+#dunstify -r 1000 -t 1500 $current_volume
+dunstify -I ~/.local/share/icons/dunst/bell.png -r 1000 -t 1500 -h int:value:$current_volume $current_volume

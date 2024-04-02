@@ -1,0 +1,25 @@
+=========================
+Fcitx 5.1.6 -- Get Signal No.: 11
+Date: try "date -d @1709992258" if you are using GNU date ***
+ProcessID: 1640
+fcitx5(+0x126dd)[0x5573092ad6dd]
+/usr/lib/libc.so.6(+0x3d910)[0x7ffb69e3d910]
+/usr/lib/libuv.so.1(uv_poll_start+0x31)[0x7ffb6a1b9361]
+/usr/lib/libFcitx5Utils.so.2(+0x5b3ff)[0x7ffb6a5e43ff]
+/usr/lib/libdbus-1.so.3(+0x2f90f)[0x7ffb6a17a90f]
+/usr/lib/libdbus-1.so.3(+0x3050c)[0x7ffb6a17b50c]
+/usr/lib/libdbus-1.so.3(+0x2f04d)[0x7ffb6a17a04d]
+/usr/lib/libdbus-1.so.3(+0x168ad)[0x7ffb6a1618ad]
+/usr/lib/libdbus-1.so.3(+0x16945)[0x7ffb6a161945]
+/usr/lib/libdbus-1.so.3(dbus_connection_send_with_reply+0x25f)[0x7ffb6a16271f]
+/usr/lib/libdbus-1.so.3(dbus_connection_send_with_reply_and_block+0x98)[0x7ffb6a162838]
+/usr/lib/libdbus-1.so.3(dbus_bus_release_name+0xb6)[0x7ffb6a15f4d6]
+/usr/lib/libFcitx5Utils.so.2(_ZN5fcitx4dbus3Bus11releaseNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x16)[0x7ffb6a5cccc6]
+/usr/lib64/fcitx5/libdbusfrontend.so(+0x99ba)[0x7ffb681b29ba]
+/usr/lib64/fcitx5/libdbusfrontend.so(+0x9b99)[0x7ffb681b2b99]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx12AddonManager6unloadEv+0x1f0)[0x7ffb6a709c20]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx8InstanceD1Ev+0x34)[0x7ffb6a6d0524]
+fcitx5(+0x10fd9)[0x5573092abfd9]
+/usr/lib/libc.so.6(+0x27c4c)[0x7ffb69e27c4c]
+/usr/lib/libc.so.6(__libc_start_main+0x85)[0x7ffb69e27d05]
+fcitx5(+0x11711)[0x5573092ac711]

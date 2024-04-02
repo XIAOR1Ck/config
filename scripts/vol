@@ -1,0 +1,5 @@
+#!/bin/bash
+volume=`pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1`
+dunstify -C 1000
+dunstify -r 1000 -t 1500 $volume 
+

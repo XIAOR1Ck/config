@@ -1,0 +1,7 @@
+#!/bin/bash
+b_val=`brightnessctl get`
+b_max=120000
+b_per=`printf "%d" $((b_val*100/b_max))`
+dunstify -C 1000
+dunstify -r 1000 -t 1500 $b_per 
+

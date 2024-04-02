@@ -1,0 +1,23 @@
+#!/bin/bash
+
+##brightness control script using brightnessctl
+
+if [[ "$1" -eq 1 ]];then
+	brightnessctl s 2%+
+else
+	brightnessctl s 2%-
+fi
+
+#get current brightness
+current_brightness=$(brightnessctl get)
+#get max brightness
+max_brightness=$(brightnessctl m)
+##get brightness percentage
+brightness_percentage=$((($current_brightness*100) /$max_brightness))
+
+#display using dunstify
+
+dunstify -I ~/.local/share/icons/dunst/sun.png -r 1000 -t 1500 -h int:value:$brightness_percentage $brightness_percentage
+
+
+

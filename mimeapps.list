@@ -1,0 +1,7 @@
+[Added Associations]
+image/jpeg=qimgv.desktop;
+application/pdf=xreader.desktop;org.pwmt.zathura.desktop;firefox.desktop;
+video/webm=mpv.desktop;
+
+[Default Applications]
+video/webm=mpv.desktop

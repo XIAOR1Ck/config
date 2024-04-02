@@ -1,0 +1,6 @@
+#!/bin/bash
+#screenshot utility for keybinding
+#tools used: grim, slurp, wl-clipboard
+name=$(date +'%F-%H-%M-%S_grim.png')
+grim -g "$(slurp)" - | wl-copy -t image/png
+wl-paste > ~/Pictures/Screenshots/$name
